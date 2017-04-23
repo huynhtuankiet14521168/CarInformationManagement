@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="a5083a4f-9b10-4526-891e-101ede651d36" name="TopCar" linkedPackageId="94dce57a-a487-4bfc-b69f-bfc4cf7aa71b" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="dc88a5d2-588f-4488-ab69-d5f6631c9517">
-      <profileInstance Id="2941cfb7-c0f6-4bb7-b0a0-3be6c6441563" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="5e86094f-f382-4244-9060-6b960cd0a620">
-      <profileInstance Id="e59d314f-ac02-46c7-92be-92b38d6dd96a" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="9e7ddfcb-3e7c-4422-9807-3a43383b5ec7" name="TopCar" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
@@ -46,7 +32,7 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="9deadd97-051f-4b84-92d0-73d89d7dc9ff" name="General car top selling in month" isLeaf="false">
+          <opaqueAction Id="9deadd97-051f-4b84-92d0-73d89d7dc9ff" name="Summarize car top selling in month" isLeaf="false">
             <elementDefinition Id="fa20af6c-8678-477e-a68e-45a42785a4b8" />
             <flowNodeTargets>
               <controlFlow Id="07d0785d-83bc-4e21-a30b-a1d54f699d56" isLeaf="false">
@@ -59,20 +45,20 @@
             <elementDefinition Id="aff41ef3-621e-4bf7-9a30-334b19ab0093" />
             <flowNodeTargets>
               <controlFlow Id="76549aec-f524-4631-ad96-cd91c02fa40b" isLeaf="false">
-                <opaqueActionMoniker Id="9deadd97-051f-4b84-92d0-73d89d7dc9ff" LastKnownName="General car top selling in month" />
+                <opaqueActionMoniker Id="9deadd97-051f-4b84-92d0-73d89d7dc9ff" LastKnownName="Summarize car top selling in month" />
                 <elementDefinition Id="6a375388-c5c7-4a50-8748-a1eda3165f3e" />
               </controlFlow>
               <controlFlow Id="bc70f088-2749-41b2-b1cd-aa2227858f08" isLeaf="false">
-                <opaqueActionMoniker Id="84c54988-0105-423a-a564-4d9bb8bc204c" LastKnownName="General car top selling in quater" />
+                <opaqueActionMoniker Id="84c54988-0105-423a-a564-4d9bb8bc204c" LastKnownName="Summarize car top selling in year" />
                 <elementDefinition Id="f4cda0e7-5749-4129-acb7-f7fca76f8eb3" />
               </controlFlow>
               <controlFlow Id="8caa4dd2-bc3e-4afa-94c8-1b52a15c1c26" isLeaf="false">
-                <opaqueActionMoniker Id="9b3a0bc0-4c04-4564-9c55-5b774264e84f" LastKnownName="General car top selling in year" />
+                <opaqueActionMoniker Id="9b3a0bc0-4c04-4564-9c55-5b774264e84f" LastKnownName="Summarize car top rate" />
                 <elementDefinition Id="ae8c1801-eb88-4777-a978-c878f6b4ad9c" />
               </controlFlow>
             </flowNodeTargets>
           </forkNode>
-          <opaqueAction Id="84c54988-0105-423a-a564-4d9bb8bc204c" name="General car top selling in quater" isLeaf="false">
+          <opaqueAction Id="84c54988-0105-423a-a564-4d9bb8bc204c" name="Summarize car top selling in year" isLeaf="false">
             <elementDefinition Id="9700a9d3-ab11-4f2d-9171-c09441d490ce" />
             <flowNodeTargets>
               <controlFlow Id="6fe545cd-171c-4dbd-86f8-e9537b3a20b5" isLeaf="false">
@@ -81,7 +67,7 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="9b3a0bc0-4c04-4564-9c55-5b774264e84f" name="General car top selling in year" isLeaf="false">
+          <opaqueAction Id="9b3a0bc0-4c04-4564-9c55-5b774264e84f" name="Summarize car top rate" isLeaf="false">
             <elementDefinition Id="6e4f06c9-b4d9-4210-be9d-a00a462d61a3" />
             <flowNodeTargets>
               <controlFlow Id="dd0d10a8-639c-4de9-b9a4-1fe136f8bf5a" isLeaf="false">
@@ -126,5 +112,19 @@
   </packagedElements>
   <package Id="94dce57a-a487-4bfc-b69f-bfc4cf7aa71b" name="Activity">
     <elementDefinition Id="5168de5e-f401-487f-a3a7-7c09a1f5a506" />
+    <profileInstances>
+      <packageHasProfileInstances Id="dc88a5d2-588f-4488-ab69-d5f6631c9517">
+        <profileInstance Id="2941cfb7-c0f6-4bb7-b0a0-3be6c6441563" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5e86094f-f382-4244-9060-6b960cd0a620">
+        <profileInstance Id="e59d314f-ac02-46c7-92be-92b38d6dd96a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="3de093df-241d-47a3-bd21-4e621e5cff24" name="Rating" linkedPackageId="97e7ba28-7b8a-4dab-9722-a55c4c995b63" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="277491aa-03ce-4576-a48e-e917639ad9ba">
+      <profileInstance Id="50f13185-98b3-47d7-af1e-d6925856be3c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="629f4b7d-bf2e-41f4-81fe-93a2b7089567">
+      <profileInstance Id="4edcdd80-dc42-44b9-af6d-47aa95286a7b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="361a462c-31c4-400f-806a-b40f7f314249" name="Rating" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="077a3e9f-7f80-47dc-b47f-07506534ab32" />
+        <nodes>
+          <initialNode Id="4be84a79-b344-435e-9fb5-1c7cc19af7c7" name="Initial1" isLeaf="false">
+            <elementDefinition Id="e1c84348-c7b1-4ef1-a365-39c9b3dd99a0" />
+            <flowNodeTargets>
+              <controlFlow Id="79ef49ff-1042-4941-bef7-77e551ca5fbd" isLeaf="false">
+                <opaqueActionMoniker Id="86ac3ea1-b883-4e27-a3be-8500a621f5b9" LastKnownName="Access Website" />
+                <elementDefinition Id="a06d026c-3fe4-4fee-ad84-8fb9447f8c28" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="86ac3ea1-b883-4e27-a3be-8500a621f5b9" name="Access Website" isLeaf="false">
+            <elementDefinition Id="a11ec815-ae4a-4351-8bc3-45d9c17e4a2f" />
+            <flowNodeTargets>
+              <controlFlow Id="9402a59f-a84d-4772-91a6-7791ca9680b9" isLeaf="false">
+                <opaqueActionMoniker Id="658a53a4-2ac1-417d-9ea8-2650dcd1ce88" LastKnownName="User access" />
+                <elementDefinition Id="7c994f07-cc79-498b-81af-39da38ed3740" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="658a53a4-2ac1-417d-9ea8-2650dcd1ce88" name="User access" isLeaf="false">
+            <elementDefinition Id="eef2de85-01f9-44a9-9811-8c9dbe0467da" />
+            <flowNodeTargets>
+              <controlFlow Id="7c34fae0-ed9c-4e8f-83f1-abce3d8c7649" isLeaf="false">
+                <opaqueActionMoniker Id="7acfb899-abcf-447a-8169-f5f5b3559ff1" LastKnownName="Choose rate car" />
+                <elementDefinition Id="a7f38b9c-4759-440d-b84d-0a9057353e85" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7acfb899-abcf-447a-8169-f5f5b3559ff1" name="Choose rate car" isLeaf="false">
+            <elementDefinition Id="6b4b3d46-dab9-4660-bc18-4859ec921f12" />
+            <flowNodeTargets>
+              <controlFlow Id="6d91b6a2-aa3a-420f-bdad-f10800ce7f5b" isLeaf="false">
+                <opaqueActionMoniker Id="70348884-d07d-467a-9aa5-1bc7a1dc8c84" LastKnownName="Rate car" />
+                <elementDefinition Id="9c375bff-74dc-4e8a-a39d-b81af0698213" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="70348884-d07d-467a-9aa5-1bc7a1dc8c84" name="Rate car" isLeaf="false">
+            <elementDefinition Id="02118c30-d014-420e-8591-b63a989c80ec" />
+            <flowNodeTargets>
+              <controlFlow Id="9e997380-c35d-4f0e-a032-9275b3c22561" isLeaf="false">
+                <activityFinalNodeMoniker Id="4b0273a6-eef9-46b4-9ee9-3b4bb88de32e" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="b8d8e987-9d01-49e6-9d15-7206af15bb96" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="4b0273a6-eef9-46b4-9ee9-3b4bb88de32e" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="6dd3a43f-21de-4f4f-9648-b6e5b60450fb" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="97e7ba28-7b8a-4dab-9722-a55c4c995b63" name="Activity">
+    <elementDefinition Id="5168de5e-f401-487f-a3a7-7c09a1f5a506" />
+  </package>
+</activityRootModel>
