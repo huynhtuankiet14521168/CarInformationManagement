@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="3a570a1e-4bd0-4454-9edc-766ce987344d" name="Comment" linkedPackageId="d8ffba5e-55b6-4459-9ced-1b7285a8c21d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="1cf3f1ef-3abf-4dc8-960e-ad8f1363c5a2">
+      <profileInstance Id="cc184ce7-13f5-4adb-b7ca-3ceb6b9fe8bf" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="aa41daad-56a2-4a92-b8c0-8f4cb7ec358d">
+      <profileInstance Id="db59ee85-2fa7-4761-b593-68b2ac582b41" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="b77223ff-b7ae-4d54-b030-e90199dc4258" name="Comment" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="c7115332-6bf5-4661-8220-432a93e35f86" />
+        <nodes>
+          <initialNode Id="c488d81e-7a78-49b8-9c29-f4255cc637b8" name="Initial1" isLeaf="false">
+            <elementDefinition Id="0177a02b-40c1-43d0-87cb-692eda6c0155" />
+            <flowNodeTargets>
+              <controlFlow Id="bc61ca25-35e2-48e5-a0fd-f6da60ce6b95" isLeaf="false">
+                <opaqueActionMoniker Id="e9781d61-69dc-4dcf-a24c-05b37fe4ecb4" LastKnownName="Access website" />
+                <elementDefinition Id="dad28518-9bbf-49bc-beb0-585f89fbf8fd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="e9781d61-69dc-4dcf-a24c-05b37fe4ecb4" name="Access website" isLeaf="false">
+            <elementDefinition Id="becefa40-1c90-4c2d-8435-83353faab828" />
+            <flowNodeTargets>
+              <controlFlow Id="539e1d86-58ff-4ef6-910f-b18897567a41" isLeaf="false">
+                <opaqueActionMoniker Id="ab878058-741b-4251-aaeb-da0b979cfcc5" LastKnownName="Access user" />
+                <elementDefinition Id="0d917c1f-ed4f-47ba-a4aa-0b9e8a078019" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ab878058-741b-4251-aaeb-da0b979cfcc5" name="Access user" isLeaf="false">
+            <elementDefinition Id="f3da36f0-4158-4912-ba5e-ead6bff61254" />
+            <flowNodeTargets>
+              <controlFlow Id="04205a9d-b9a4-4fa8-9ee9-ca19f75f5144" isLeaf="false">
+                <opaqueActionMoniker Id="18ca4f87-cb5b-42f6-889e-a2f9d3dcc7f5" LastKnownName="Choose car need comment" />
+                <elementDefinition Id="416d0027-ceca-4f7c-946a-315845d8c65e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="18ca4f87-cb5b-42f6-889e-a2f9d3dcc7f5" name="Choose car need comment" isLeaf="false">
+            <elementDefinition Id="5fdf258a-3621-4ff6-9fd1-e72246cd96d2" />
+            <flowNodeTargets>
+              <controlFlow Id="eb21b52f-40bb-4513-839f-9be23435f705" isLeaf="false">
+                <opaqueActionMoniker Id="b51d5315-bb7f-4b23-ab94-90c864176642" LastKnownName="Comment to car" />
+                <elementDefinition Id="41b4b613-a1de-43a2-acde-d66c300790a3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b51d5315-bb7f-4b23-ab94-90c864176642" name="Comment to car" isLeaf="false">
+            <elementDefinition Id="a8fca175-5a88-4d30-9554-d97b69dc6cd2" />
+            <flowNodeTargets>
+              <controlFlow Id="5592c434-019f-441e-8ae1-6f26a4255910" isLeaf="false">
+                <activityFinalNodeMoniker Id="d85095cb-bf8f-428f-a6da-dc150ae9aa69" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="09ff19d5-7581-48fc-aeb9-186d33e35e56" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="d85095cb-bf8f-428f-a6da-dc150ae9aa69" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="a00cef47-90b7-409f-8554-fa60b3141720" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="d8ffba5e-55b6-4459-9ced-1b7285a8c21d" name="Activity">
+    <elementDefinition Id="5168de5e-f401-487f-a3a7-7c09a1f5a506" />
+  </package>
+</activityRootModel>

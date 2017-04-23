@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="729140ca-1cd9-4aa3-a0a5-8e78325a8d21" name="UpdateInformation" linkedPackageId="125217f0-0624-4d9e-92f4-a5c84020deb0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="b85df254-babe-4eaf-b233-5153cf25900a">
+      <profileInstance Id="8931cb8d-93dc-4e01-9a4b-da42a66d2e9e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e9938dcc-3ccd-49cd-9ca2-3ab3868f6c03">
+      <profileInstance Id="c83969f2-ad21-446e-b527-301e24c32b64" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="cda37b66-ba00-47a7-a861-844f2c24b848" name="UpdateInformation" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="8a0412ce-53da-47a4-afb8-eee0c9963121" />
+        <nodes>
+          <initialNode Id="3c74988c-775d-44da-a910-698210ab84cd" name="Initial1" isLeaf="false">
+            <elementDefinition Id="5e5d77d9-adb4-45ca-870c-3cea42d6aee9" />
+            <flowNodeTargets>
+              <controlFlow Id="2cbd5776-09fc-41a3-8cd5-2a023ab68e3b" isLeaf="false">
+                <opaqueActionMoniker Id="5614495c-6cd7-404b-81ff-86b2ab8bb365" LastKnownName="Access website" />
+                <elementDefinition Id="a88d4e06-02ab-44ff-8f93-2cb6edbf85c6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="5614495c-6cd7-404b-81ff-86b2ab8bb365" name="Access website" isLeaf="false">
+            <elementDefinition Id="c12d18b8-36b2-4c0c-a98a-24c18ae2be88" />
+            <flowNodeTargets>
+              <controlFlow Id="c18d8d6f-c2bb-4cb1-b014-1cb4e69c7f4e" isLeaf="false">
+                <opaqueActionMoniker Id="c59a7559-34e0-460c-81cd-bfb755201c4c" LastKnownName="Login employee ID" />
+                <elementDefinition Id="35f8aa2e-458c-4d81-b891-0038e7ec906a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c59a7559-34e0-460c-81cd-bfb755201c4c" name="Login employee ID" isLeaf="false">
+            <elementDefinition Id="1c07d2b4-2ccd-4d90-9841-d1f8e7668c4f" />
+            <flowNodeTargets>
+              <controlFlow Id="d60b40ff-cd77-4743-9339-cfb301e7ed95" isLeaf="false">
+                <opaqueActionMoniker Id="f222bba7-9c3e-4e5f-979b-917d5eb9fce0" LastKnownName="Choose car need update" />
+                <elementDefinition Id="03a8142e-77df-4223-9052-7e95a46dbf43" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f222bba7-9c3e-4e5f-979b-917d5eb9fce0" name="Choose car need update" isLeaf="false">
+            <elementDefinition Id="2bb4c960-9fd7-4373-957b-881006b8dbfd" />
+            <flowNodeTargets>
+              <controlFlow Id="4c1e8c86-316c-4490-b9bb-d4f2b936793f" isLeaf="false">
+                <forkNodeMoniker Id="5c40eb96-dae5-434a-a97d-a289c5bf3951" LastKnownName="Fork1" />
+                <elementDefinition Id="d75510ab-2a23-4f8f-be9b-6538e50059f5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="5c40eb96-dae5-434a-a97d-a289c5bf3951" name="Fork1" isLeaf="false">
+            <elementDefinition Id="de6c476c-0f1d-4541-a865-2f884e999123" />
+            <flowNodeTargets>
+              <controlFlow Id="9f5bab35-c8fc-4549-a132-dd3248117931" isLeaf="false">
+                <opaqueActionMoniker Id="2acfe88d-47c7-44fd-a09d-cec5b4ce16d7" LastKnownName="Delete car" />
+                <elementDefinition Id="025e60aa-9c30-401a-8337-f3275930b273" />
+              </controlFlow>
+              <controlFlow Id="bca323e4-ad73-4811-8086-231f23af177d" isLeaf="false">
+                <opaqueActionMoniker Id="5041a45b-f4e9-4648-a3d1-120587b03ad8" LastKnownName="Update car" />
+                <elementDefinition Id="3e9026ee-4250-4a79-bfb0-1f4d7ff6bd48" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="2acfe88d-47c7-44fd-a09d-cec5b4ce16d7" name="Delete car" isLeaf="false">
+            <elementDefinition Id="9bda1902-b1cf-457c-b2ab-e552c5d9a5f4" />
+            <flowNodeTargets>
+              <controlFlow Id="9782bd87-53d1-45bd-b2b9-58a43456598c" isLeaf="false">
+                <joinNodeMoniker Id="2e74f323-85ce-4674-aa78-c30457330019" LastKnownName="Join1" />
+                <elementDefinition Id="133a27bf-4358-4f85-b6b8-f8b0b8df3242" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5041a45b-f4e9-4648-a3d1-120587b03ad8" name="Update car" isLeaf="false">
+            <elementDefinition Id="0249c287-5492-405f-89ee-494573ad0559" />
+            <flowNodeTargets>
+              <controlFlow Id="eeff9f48-9f7c-4bc1-abe9-d205ed13762f" isLeaf="false">
+                <joinNodeMoniker Id="2e74f323-85ce-4674-aa78-c30457330019" LastKnownName="Join1" />
+                <elementDefinition Id="a2f19bd0-7033-46b6-8cca-ce049c4f1edf" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="2e74f323-85ce-4674-aa78-c30457330019" name="Join1" isLeaf="false">
+            <elementDefinition Id="2a7fc764-1f9c-4ce5-a37d-68bb3ce0d5e4" />
+            <flowNodeTargets>
+              <controlFlow Id="7516febc-e4da-4fd2-be5a-1d26b6d291a1" isLeaf="false">
+                <activityFinalNodeMoniker Id="e28b14f3-e03d-43a9-b79a-600ef8eff428" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="b8318ebf-85d2-4297-9500-f726b2e02d9b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <activityFinalNode Id="e28b14f3-e03d-43a9-b79a-600ef8eff428" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="499b75a6-1212-4da7-9bda-450fef58528c" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="125217f0-0624-4d9e-92f4-a5c84020deb0" name="Activity">
+    <elementDefinition Id="5168de5e-f401-487f-a3a7-7c09a1f5a506" />
+  </package>
+</activityRootModel>

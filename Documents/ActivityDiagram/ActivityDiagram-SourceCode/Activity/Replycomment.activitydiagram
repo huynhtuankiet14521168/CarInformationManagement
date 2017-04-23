@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="24872d4b-377b-497d-83f8-45a0660a18ee" name="Replycomment" linkedPackageId="57c35b3e-0780-463e-9859-9adbe82a0ec9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="9aa14461-47f1-4eed-93ff-bb93ba88e345">
+      <profileInstance Id="b99f5062-9f66-489f-ad9b-6be4a9559157" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="9b144188-fb36-4888-9d26-37fa96328723">
+      <profileInstance Id="15db71ce-f611-465e-bb5f-1d6c273e064c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="1a3ca13b-e2cd-4086-a0fe-1ef4e814403a" name="Replycomment" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="467cf679-5fea-4708-9b41-7b11c714599f" />
+        <nodes>
+          <initialNode Id="bc6b93d2-da9a-4c31-b26d-1fa254dfb49d" name="Initial1" isLeaf="false">
+            <elementDefinition Id="c694a55b-4254-44e1-a038-a59c0347552b" />
+            <flowNodeTargets>
+              <controlFlow Id="93da3b62-606a-4045-92a6-cca4349491e6" isLeaf="false">
+                <opaqueActionMoniker Id="f5b453b7-dabd-48b7-af4c-c861b929d913" LastKnownName="Access website" />
+                <elementDefinition Id="83c1fb8e-ff84-4bac-956a-e31ea7c2b63f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="f5b453b7-dabd-48b7-af4c-c861b929d913" name="Access website" isLeaf="false">
+            <elementDefinition Id="7ee0ab7c-dcc6-4592-8fac-f396d84de287" />
+            <flowNodeTargets>
+              <controlFlow Id="69cc33f2-9d74-49e9-8548-160557fa4af6" isLeaf="false">
+                <opaqueActionMoniker Id="6fe121a9-3459-4124-8aa7-aea6da78ff13" LastKnownName="Login employee ID" />
+                <elementDefinition Id="15ab9e84-ca6e-4639-9b9c-a736ce76124e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6fe121a9-3459-4124-8aa7-aea6da78ff13" name="Login employee ID" isLeaf="false">
+            <elementDefinition Id="7c4113ec-2e8d-447d-9f1b-87a615236fa8" />
+            <flowNodeTargets>
+              <controlFlow Id="3f2dfe5d-9a1c-4ae0-97ea-7c6da97aa34c" isLeaf="false">
+                <opaqueActionMoniker Id="4c8a6826-4c81-47f3-a23f-b82a19e1375b" LastKnownName="View comment" />
+                <elementDefinition Id="a2c2d6ca-ab83-4560-8a6f-27ee0cede0c7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4c8a6826-4c81-47f3-a23f-b82a19e1375b" name="View comment" isLeaf="false">
+            <elementDefinition Id="4aef9327-0779-4a56-aeba-f69709aa8f97" />
+            <flowNodeTargets>
+              <controlFlow Id="5aa02330-a586-4fc0-9148-eb9d2221f053" isLeaf="false">
+                <opaqueActionMoniker Id="ce58fbf3-ae65-4d53-9ebc-242dadf397d5" LastKnownName="Choose comment need reply" />
+                <elementDefinition Id="98268928-ff73-4ce7-8922-1b77ffb1fcbc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ce58fbf3-ae65-4d53-9ebc-242dadf397d5" name="Choose comment need reply" isLeaf="false">
+            <elementDefinition Id="14c5e941-4030-4dd5-b761-03aa57b96e69" />
+            <flowNodeTargets>
+              <controlFlow Id="1e74f8af-09be-43ad-aaf6-7884ff9107c7" isLeaf="false">
+                <opaqueActionMoniker Id="27bc1b05-a0c3-4ef3-8916-2f479e060461" LastKnownName="Reply comment" />
+                <elementDefinition Id="a82ef2fc-b95a-4a99-b760-71365b7a5b6c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="27bc1b05-a0c3-4ef3-8916-2f479e060461" name="Reply comment" isLeaf="false">
+            <elementDefinition Id="6f3a2313-c5b5-4235-aa80-cc8b451656f6" />
+            <flowNodeTargets>
+              <controlFlow Id="80a292b7-ea06-49d3-9cf2-e5f336aa9897" isLeaf="false">
+                <activityFinalNodeMoniker Id="72ab0878-370e-4a51-9716-abc4770f9472" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="ea014368-6177-4c79-87b9-35e1145245ba" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="72ab0878-370e-4a51-9716-abc4770f9472" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="64f9454a-629a-40dd-b939-8446b402eedb" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="57c35b3e-0780-463e-9859-9adbe82a0ec9" name="Activity">
+    <elementDefinition Id="5168de5e-f401-487f-a3a7-7c09a1f5a506" />
+  </package>
+</activityRootModel>
