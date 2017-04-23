@@ -1,0 +1,1902 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="33a933b1-26cb-4895-9477-4c0aec46b3dc"
+  name="ManageCar" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="c2d1e654-9893-4cfb-a41e-fe1fbb425a45"
+        name="Quản lý"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="5fc7a99e-7d45-4e8a-aa0a-bed9a13ee4d7"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="6edf5d23-745a-452e-9dfc-d1b44e54418a"
+              LastKnownName="Nhân viên"
+              LastKnownLocation="ManageCar.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="2cf11533-edbe-482a-8eb8-75cafedbd909"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Add Employee"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ad16c4f3-2229-44e7-a805-09426cef3154"
+              LastKnownName="Thêm nhân viên"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="83f69488-9463-4cb7-82e9-61f580f46540"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4637b952-9ab8-43e0-8242-88bd0b5970be"
+                  name="Add Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9f6170aa-ae1f-4c78-b0ef-293896fce0b5"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Delete Employee"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6ad22eb3-33ef-4fb4-8a89-5acfe33f8679"
+              LastKnownName="Xóa nhân viên"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b36a2561-cf3f-4966-a057-979b503304e1"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="61cb0c3b-7662-46d5-8efa-6f7f3a4705d6"
+                  name="Delete Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6bed2839-c47d-4015-be61-9608ddd830a1"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Block Employee"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3c0f30c3-1be7-47eb-aa3b-46ac4aa05b5b"
+              LastKnownName="Khóa nhân viên"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3757f6ea-1868-49d6-96c4-e1b49684472a"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7276d286-8a7d-443d-a4bd-2ebb3fec9b1d"
+                  name="Block Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="afc3c0a0-0cf1-44f2-b738-424f857f6d28"
+            isDerived="false"
+            sourceEndRoleName="Quản lý"
+            targetEndRoleName="Phê duyệt thông tin"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8cdae556-99b9-47c1-ad76-c442ec24ae9d"
+              LastKnownName="Kiểm duyệt thông tin"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="36c2c390-5a68-4479-9331-1e0193c6b949"
+                  name="Quản lý"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="93a9b4c5-47b4-4396-b830-41d44bfc44e4"
+                  name="Phê duyệt thông tin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="6edf5d23-745a-452e-9dfc-d1b44e54418a"
+        name="Nhân viên"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="0c4cb024-6926-445b-b09e-ebeccb779db7"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Đăng nhập"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="760ec607-cc3d-4654-b3c4-1530430c997b"
+              LastKnownName="Đăng nhập"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aec213cf-16be-4296-89f3-c4d0a7acca94"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0625b942-69a9-474c-8249-8ffa01fcf0ed"
+                  name="Đăng nhập"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4d47ff97-615f-47ad-9db5-b688a6973ac4"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Đăng Xuất"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6ee134ca-880f-436b-9759-669798dc13c2"
+              LastKnownName="Đăng Xuất"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ac334683-748a-4d83-9a0f-19850c666108"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e9dfbd3f-fce5-4d29-bee7-00e6a01ec433"
+                  name="Đăng Xuất"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="41d06ce1-ee8e-44d9-8b57-d8a957c2ddb7"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Thu thập thông tin"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fe11ffae-781a-4bcc-b255-25a8845566dd"
+              LastKnownName="Thu thập thông tin"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e7f958b2-004b-417c-8118-3ff4cf45e63d"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ed5041ef-b3bd-47fc-904a-a83ef86b8c00"
+                  name="Thu thập thông tin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7f606406-78f4-4aad-986c-7d1058cbfb22"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Phản hồi ý kiến"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="982acd27-a36f-4362-bd0c-45a806fc7124"
+              LastKnownName="Phản hồi ý kiến"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4e2a379b-494a-4931-8dc9-63d558a8e5f1"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1c76e689-f472-41f6-9ac3-4482bd5ba7d9"
+                  name="Phản hồi ý kiến"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ad16c4f3-2229-44e7-a805-09426cef3154"
+        name="Thêm nhân viên"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6ad22eb3-33ef-4fb4-8a89-5acfe33f8679"
+        name="Xóa nhân viên"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3c0f30c3-1be7-47eb-aa3b-46ac4aa05b5b"
+        name="Khóa nhân viên"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8cdae556-99b9-47c1-ad76-c442ec24ae9d"
+        name="Kiểm duyệt thông tin"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="760ec607-cc3d-4654-b3c4-1530430c997b"
+        name="Đăng nhập"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6ee134ca-880f-436b-9759-669798dc13c2"
+        name="Đăng Xuất"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fe11ffae-781a-4bcc-b255-25a8845566dd"
+        name="Thu thập thông tin"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b43e1a61-2650-4059-bc4c-3f42766b7979"
+            isDerived="false"
+            sourceEndRoleName="Thu thập thông tin"
+            targetEndRoleName="Mẫu xe mới"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4da5e819-f062-4dbe-b44b-488953331b11"
+              LastKnownName="Mẫu xe"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e41f175c-aeff-48aa-a588-6aef0538297f"
+                  name="Thu thập thông tin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9c99f4e0-956e-4335-8b86-79ec880ef633"
+                  name="Mẫu xe mới"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9f0a4282-a028-490b-9637-bb3f9e8736c9"
+            isDerived="false"
+            sourceEndRoleName="Thu thập thông tin"
+            targetEndRoleName="Giá xe"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b8fdd767-f95c-44e8-b3e2-08ff375f3f15"
+              LastKnownName="Giá xe"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="62eaede6-74ac-453f-8a68-ff97468e656b"
+                  name="Thu thập thông tin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c36db8d9-03ff-43c5-a83d-45b861a76607"
+                  name="Giá xe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="eae9a4aa-eb36-441b-a5ef-1e6f27071587"
+            isDerived="false"
+            sourceEndRoleName="Thu thập thông tin"
+            targetEndRoleName="Top xe bán chạy"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7dbc2c33-af49-4b4c-8fd9-c5a9d6c5c938"
+              LastKnownName="Top xe bán chạy"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="98ecacaf-d857-423a-93d3-72c019221cf7"
+                  name="Thu thập thông tin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ac223ccb-4ae3-4414-af44-da70494b360a"
+                  name="Top xe bán chạy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1a899bea-8c79-499f-83f2-c869d4b3a67f"
+            isDerived="false"
+            sourceEndRoleName="Thu thập thông tin"
+            targetEndRoleName="Dự tính chi phí"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="39d293f0-c606-484e-b197-27c5dfc21d2e"
+              LastKnownName="Dự tính chi phí"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1d99fd08-18bf-4682-ab8e-86f6ef90bc86"
+                  name="Thu thập thông tin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c73915ad-01a8-471d-b692-f87e038e8abe"
+                  name="Dự tính chi phí"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4da5e819-f062-4dbe-b44b-488953331b11"
+        name="Mẫu xe"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="3fbc70cf-8fdc-4391-9577-c628fe7ade02"
+            isDerived="false"
+            sourceEndRoleName="Mẫu xe"
+            targetEndRoleName="Tên xe"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="af6f5b37-5251-4b2e-b44b-c2582d1518a4"
+              LastKnownName="Tên xe"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a5d99cc6-669c-482c-bd43-75db84f5fa28"
+                  name="Mẫu xe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5a95ec59-35a5-4eb7-bd9b-8a73293d31e9"
+                  name="Tên xe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bd3f35ef-163c-4726-b08f-6ccb9c19d5cf"
+            isDerived="false"
+            sourceEndRoleName="Mẫu xe"
+            targetEndRoleName="Hãng xe"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="982b8151-1804-49bb-b7a1-c8ae81bcca3d"
+              LastKnownName="Hãng xe"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ae3a6e9-8847-4f4c-83ee-ad68a4d62a1e"
+                  name="Mẫu xe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="19f0af0e-9f03-488d-9ad0-3bfd813f6909"
+                  name="Hãng xe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1e055f92-c229-4677-b1d6-eb528cfd7e2c"
+            isDerived="false"
+            sourceEndRoleName="Mẫu xe"
+            targetEndRoleName="Nguồn gốc"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="eaa78e7e-d59d-4105-b744-a42daae6e7d7"
+              LastKnownName="Nguồn gốc"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="03a86302-b6ca-4e63-b65f-0ca777aafa22"
+                  name="Mẫu xe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b1e5a20e-bb52-41de-89ea-6be954bdd9a6"
+                  name="Nguồn gốc"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f0456561-5136-4ce3-85c9-3ba91c288681"
+            isDerived="false"
+            sourceEndRoleName="Mẫu xe"
+            targetEndRoleName="Ảnh xe"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="eb2d6331-116b-4c72-b5bd-a493a5403351"
+              LastKnownName="Ảnh xe"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4f707ec6-a5d7-4d03-9aa5-2b6e765482ca"
+                  name="Mẫu xe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fb44e7cf-d1ef-4145-b4c2-4d8866aefe3c"
+                  name="Ảnh xe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="76e28e62-2edf-4c71-9d9c-57e60635ba17"
+            isDerived="false"
+            sourceEndRoleName="Mẫu xe"
+            targetEndRoleName="Động cơ"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="8e55c00e-06b9-4f76-8724-dd3e411e3190"
+              LastKnownName="Động cơ"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9045a5fa-d66e-46ab-9786-1e01fcfeb8b9"
+                  name="Mẫu xe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cf427f90-3ca2-443a-bf22-2ed5c068584a"
+                  name="Động cơ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b82cc1b0-9245-4444-94ba-1a8c1b4a5537"
+            isDerived="false"
+            sourceEndRoleName="Mẫu xe"
+            targetEndRoleName="Công xuất"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="eef59f9e-52a4-4394-a793-44431dae49b5"
+              LastKnownName="Công xuất"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="71f34113-5ff3-4f97-9763-0f4c4f9d4ee7"
+                  name="Mẫu xe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5237b366-b27b-4fc7-babc-1b6627b1ca71"
+                  name="Công xuất"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <extendedCases>
+          <extend
+            Id="8cea7500-99ec-478b-b413-ea22135eca98">
+            <useCaseMoniker
+              Id="39d293f0-c606-484e-b197-27c5dfc21d2e"
+              LastKnownName="Dự tính chi phí"
+              LastKnownLocation="ManageCar.uml" />
+          </extend>
+          <extend
+            Id="ea723779-0621-4cfb-ba58-af893171afb6">
+            <useCaseMoniker
+              Id="7dbc2c33-af49-4b4c-8fd9-c5a9d6c5c938"
+              LastKnownName="Top xe bán chạy"
+              LastKnownLocation="ManageCar.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b8fdd767-f95c-44e8-b3e2-08ff375f3f15"
+        name="Giá xe"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="64667f41-729f-42a7-8bec-5c56862895ee">
+            <useCaseMoniker
+              Id="6034250b-30bf-468e-989b-f8f3c5ef9965"
+              LastKnownName="Giá niêm yếu"
+              LastKnownLocation="ManageCar.uml" />
+          </include>
+          <include
+            Id="5658e3d3-87c6-4a54-ae19-085e450edadc">
+            <useCaseMoniker
+              Id="43ea7f67-c806-4c78-b710-b59d0500494d"
+              LastKnownName="Giá đàm phán"
+              LastKnownLocation="ManageCar.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="af6f5b37-5251-4b2e-b44b-c2582d1518a4"
+        name="Tên xe"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="982b8151-1804-49bb-b7a1-c8ae81bcca3d"
+        name="Hãng xe"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="eaa78e7e-d59d-4105-b744-a42daae6e7d7"
+        name="Nguồn gốc"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6034250b-30bf-468e-989b-f8f3c5ef9965"
+        name="Giá niêm yếu"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="43ea7f67-c806-4c78-b710-b59d0500494d"
+        name="Giá đàm phán"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="8f4d1ccf-323a-4081-8e95-284e32cc0909"
+            isDerived="false"
+            sourceEndRoleName="Giá đàm phán"
+            targetEndRoleName="Tổng chi phí"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="35a2bb95-e642-4e9b-a29b-0c600961edbf"
+              LastKnownName="Tổng chi phí"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d1eae72b-3891-4793-849d-71693a95f944"
+                  name="Giá đàm phán"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0b848afc-96bb-4b4a-bf25-eaad64ee3ac2"
+                  name="Tổng chi phí"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <extendedCases>
+          <extend
+            Id="2d602f33-9c3e-426c-b20e-c07364219f89">
+            <useCaseMoniker
+              Id="39d293f0-c606-484e-b197-27c5dfc21d2e"
+              LastKnownName="Dự tính chi phí"
+              LastKnownLocation="ManageCar.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="eb2d6331-116b-4c72-b5bd-a493a5403351"
+        name="Ảnh xe"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8e55c00e-06b9-4f76-8724-dd3e411e3190"
+        name="Động cơ"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="eef59f9e-52a4-4394-a793-44431dae49b5"
+        name="Công xuất"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="982acd27-a36f-4362-bd0c-45a806fc7124"
+        name="Phản hồi ý kiến"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="8ae3deb6-049f-4a1d-a1a8-7cd84154ec22">
+            <useCaseMoniker
+              Id="dd202a4d-ad2e-4c12-aacc-980495249f16"
+              LastKnownName="Đánh giá"
+              LastKnownLocation="ManageCar.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dd202a4d-ad2e-4c12-aacc-980495249f16"
+        name="Đánh giá"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="d0613ce0-cb4e-4807-bc9e-6f02d21fce6e">
+            <useCaseMoniker
+              Id="3ad4a623-4ecb-40a5-a52c-f7030eb8f6b7"
+              LastKnownName="Xem thông tin xe"
+              LastKnownLocation="ManageCar.uml" />
+          </extend>
+        </extendedCases>
+        <additions>
+          <include
+            Id="7e203e9f-ef06-49a4-96bb-056d42200213">
+            <useCaseMoniker
+              Id="4d1ef601-afe1-4c24-a085-999651fe5df2"
+              LastKnownName="Nội dung đánh giá"
+              LastKnownLocation="ManageCar.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="34de3419-6888-4efd-9b97-fb022c8d13cb"
+        name="Người dùng"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c786ad3b-7645-44bb-8517-2725459cb370"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Đánh giá sản phẩm"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="dd202a4d-ad2e-4c12-aacc-980495249f16"
+              LastKnownName="Đánh giá"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="272e83c1-ba7a-4a8c-b7d0-21d307fdfe8b"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1829152d-425c-4b1f-8466-60731db905ec"
+                  name="Đánh giá sản phẩm"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2d9e2746-1119-4810-9974-5fd502216756"
+            isDerived="false"
+            sourceEndRoleName="Người dùng"
+            targetEndRoleName="Xem thông tin xe"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3ad4a623-4ecb-40a5-a52c-f7030eb8f6b7"
+              LastKnownName="Xem thông tin xe"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f023aec7-8c95-4b46-ba9e-6a5b0da499d7"
+                  name="Người dùng"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c602bce-59e7-4f1b-b49a-46ab3ff9c949"
+                  name="Xem thông tin xe"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="46af7c7f-13d8-4612-b7ce-a24095a740b7"
+            isDerived="false"
+            sourceEndRoleName="Người dùng"
+            targetEndRoleName="UseCase1"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4bafaf4d-90e0-4248-a7e9-1fc0d1c1a295"
+              LastKnownName="Tìm kiếm xe"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f79515cf-a57d-4c25-855a-2767ab54c1a0"
+                  name="Người dùng"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="71e49f3c-9526-40ab-b1d1-8149591aa7cf"
+                  name="UseCase1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3ad4a623-4ecb-40a5-a52c-f7030eb8f6b7"
+        name="Xem thông tin xe"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="28f9ac62-4a23-40da-bff0-b83c054c26ae"
+        name="So Sánh"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="967189ca-a7c7-44c2-9cce-53930ad480f7">
+            <useCaseMoniker
+              Id="3ad4a623-4ecb-40a5-a52c-f7030eb8f6b7"
+              LastKnownName="Xem thông tin xe"
+              LastKnownLocation="ManageCar.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7dbc2c33-af49-4b4c-8fd9-c5a9d6c5c938"
+        name="Top xe bán chạy"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="cd37cc26-2f82-4b1a-a561-8a778fe5eb9f"
+            isDerived="false"
+            sourceEndRoleName="Top xe bán chạy"
+            targetEndRoleName="Tổng xe bán ra năm ngoái"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6154edfc-8b85-45bb-8523-5af467419928"
+              LastKnownName="Tổng xe bán ra năm ngoái"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9ce40432-7200-4f3e-84da-17146219c0cb"
+                  name="Top xe bán chạy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c419e0e3-2633-447e-b74b-9850f37be509"
+                  name="Tổng xe bán ra năm ngoái"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bbf58f67-e663-432b-8e5d-11539f0accf8"
+            isDerived="false"
+            sourceEndRoleName="Top xe bán chạy"
+            targetEndRoleName="Tỷ lệ bán hàng theo vùng"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f9cd7726-e771-4c48-9768-ccc3c4a34ff0"
+              LastKnownName="Tỷ lệ bán hàng theo quý"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c02a1548-3830-41e9-9154-859aaa3f95fc"
+                  name="Top xe bán chạy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e4735c50-eae5-4db5-877f-2a7d1b6c2480"
+                  name="Tỷ lệ bán hàng theo vùng"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3879375f-998c-4d56-89c6-7f24f443d607"
+            isDerived="false"
+            sourceEndRoleName="Top xe bán chạy"
+            targetEndRoleName="Tỷ lệ top xe theo đánh giá"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="695f61c9-6938-4dab-a5d3-c33199d09f1b"
+              LastKnownName="Tỷ lệ top xe theo đánh giá"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="61769c8e-0ee2-49b0-82c3-187b3c126bc9"
+                  name="Top xe bán chạy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="55d58beb-2f98-40e1-8e64-cd40f44bce33"
+                  name="Tỷ lệ top xe theo đánh giá"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6154edfc-8b85-45bb-8523-5af467419928"
+        name="Tổng xe bán ra năm ngoái"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f9cd7726-e771-4c48-9768-ccc3c4a34ff0"
+        name="Tỷ lệ bán hàng theo quý"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="66559956-b8d5-46d8-8805-fd10c60a2dc6">
+            <useCaseMoniker
+              Id="2900d33e-1d65-4cfe-a4ec-aee87d60e7cc"
+              LastKnownName="Bắc"
+              LastKnownLocation="ManageCar.uml" />
+          </include>
+          <include
+            Id="75b659b5-9c26-4fdc-afde-02f3912cd308">
+            <useCaseMoniker
+              Id="f7186235-7198-4865-8e84-3d86bd73be46"
+              LastKnownName="Trung"
+              LastKnownLocation="ManageCar.uml" />
+          </include>
+          <include
+            Id="4e20236e-df6f-4df2-bc56-96879d80d71a">
+            <useCaseMoniker
+              Id="92766d67-d2f5-469b-917e-76943257f5a1"
+              LastKnownName="Nam"
+              LastKnownLocation="ManageCar.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2900d33e-1d65-4cfe-a4ec-aee87d60e7cc"
+        name="Bắc"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f7186235-7198-4865-8e84-3d86bd73be46"
+        name="Trung"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="92766d67-d2f5-469b-917e-76943257f5a1"
+        name="Nam"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4d1ef601-afe1-4c24-a085-999651fe5df2"
+        name="Nội dung đánh giá"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="39d293f0-c606-484e-b197-27c5dfc21d2e"
+        name="Dự tính chi phí"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="7d32a4d7-856c-4f49-bafe-a44f28022a87"
+            isDerived="false"
+            sourceEndRoleName="Dự tính chi phí"
+            targetEndRoleName="Phí trước bạ"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e2a28d08-e6bf-4355-96b2-3264a116825d"
+              LastKnownName="Phí trước bạ"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0a68cb8b-459e-4fda-8f78-96510a7dc51c"
+                  name="Dự tính chi phí"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="df92806e-13c2-4abf-b678-ceda99e85dae"
+                  name="Phí trước bạ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0becd20c-253c-4544-ac2b-c0e36ed00d73"
+            isDerived="false"
+            sourceEndRoleName="Dự tính chi phí"
+            targetEndRoleName="Phí sử dụng đường bộ"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="13ceefab-d4c8-4c9a-ae3d-315c7e8279cb"
+              LastKnownName="Phí sử dụng đường bộ"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="efd45578-73d8-454d-8ed2-73b39f1945b9"
+                  name="Dự tính chi phí"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8ca93b9f-91c6-4a5f-b9fc-e3c31104f5b2"
+                  name="Phí sử dụng đường bộ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4e40f095-4e11-4b95-a42a-91e6b772ce0d"
+            isDerived="false"
+            sourceEndRoleName="Dự tính chi phí"
+            targetEndRoleName="Bảo hiểm dân sự"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3ea494c9-5c78-43a0-b2b6-fb16863ea6b0"
+              LastKnownName="Bảo hiểm dân sự"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="af022249-e193-490d-b22d-36eb85db5cb4"
+                  name="Dự tính chi phí"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d38214c9-5879-4e40-ba9d-d814980d8702"
+                  name="Bảo hiểm dân sự"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="381072da-568f-4e5c-950b-a4325b87beff"
+            isDerived="false"
+            sourceEndRoleName="Dự tính chi phí"
+            targetEndRoleName="Phí đăng ký biển số"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1d69f65b-132e-4fd3-9ef0-ea7744df112b"
+              LastKnownName="Phí đăng ký biển số"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="272f418b-ccd4-49ae-9f77-1dff4b43c8e4"
+                  name="Dự tính chi phí"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a559e92d-39bb-4bc8-ae24-c19f4622e9f8"
+                  name="Phí đăng ký biển số"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="dbb9cad0-ebe7-42e0-ac28-938be2826d12"
+            isDerived="false"
+            sourceEndRoleName="Dự tính chi phí"
+            targetEndRoleName="Phí đăng kiểm"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a06a898d-0fef-4b82-8556-d6c8310ab7a2"
+              LastKnownName="Phí đăng kiểm"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="832ff139-eb8f-4532-b865-0997f6f8ea9b"
+                  name="Dự tính chi phí"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ec89e9f4-72e2-49eb-b210-86f1cf2cd3aa"
+                  name="Phí đăng kiểm"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e2a28d08-e6bf-4355-96b2-3264a116825d"
+        name="Phí trước bạ"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c1f49c10-a568-4ca7-a405-fa57a6466caa"
+            isDerived="false"
+            sourceEndRoleName="Phí trước bạ"
+            targetEndRoleName="Tổng chi phí"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="35a2bb95-e642-4e9b-a29b-0c600961edbf"
+              LastKnownName="Tổng chi phí"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8f142780-eac3-48d3-a5ed-5847b6c5afed"
+                  name="Phí trước bạ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4e1633dd-dd6d-4036-9d75-eedd615b7719"
+                  name="Tổng chi phí"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="afc5b1be-0d07-4f8a-8b7a-22cfe1c6027f"
+        name="Họ tên người đánh giá"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="5a1c6f96-4922-4893-a7ed-0d769928cad3">
+            <useCaseMoniker
+              Id="dd202a4d-ad2e-4c12-aacc-980495249f16"
+              LastKnownName="Đánh giá"
+              LastKnownLocation="ManageCar.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a983e9fd-6dac-4841-bb57-7606c27ba0b3"
+        name="Tên xe đánh giá"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="22f75b5b-7a56-4f11-a611-befeb224ed2b">
+            <useCaseMoniker
+              Id="dd202a4d-ad2e-4c12-aacc-980495249f16"
+              LastKnownName="Đánh giá"
+              LastKnownLocation="ManageCar.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7da94b35-8bea-462e-ad02-c8536fbee545"
+        name="Email người đánh giá"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="f70a221b-8793-4282-b740-c307d07aacd0">
+            <useCaseMoniker
+              Id="dd202a4d-ad2e-4c12-aacc-980495249f16"
+              LastKnownName="Đánh giá"
+              LastKnownLocation="ManageCar.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="13ceefab-d4c8-4c9a-ae3d-315c7e8279cb"
+        name="Phí sử dụng đường bộ"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ae46572b-b348-45f7-969d-9481f3abe3b3"
+            isDerived="false"
+            sourceEndRoleName="Phí sử dụng đường bộ"
+            targetEndRoleName="Tổng chi phí"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="35a2bb95-e642-4e9b-a29b-0c600961edbf"
+              LastKnownName="Tổng chi phí"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7e367147-73c7-4892-b5a9-87baf3bf39e9"
+                  name="Phí sử dụng đường bộ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7073c5c0-cfb6-4401-8cee-6953819dc8bb"
+                  name="Tổng chi phí"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3ea494c9-5c78-43a0-b2b6-fb16863ea6b0"
+        name="Bảo hiểm dân sự"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="98d2fb86-3f21-438c-b63e-32e72517a101"
+            isDerived="false"
+            sourceEndRoleName="Bảo hiểm dân sự"
+            targetEndRoleName="Tổng chi phí"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="35a2bb95-e642-4e9b-a29b-0c600961edbf"
+              LastKnownName="Tổng chi phí"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="96b2dd19-98b4-4b7b-b5ad-4e175e7af0e1"
+                  name="Bảo hiểm dân sự"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="929c564f-7a84-41d4-b98c-9d9c078b0ba6"
+                  name="Tổng chi phí"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1d69f65b-132e-4fd3-9ef0-ea7744df112b"
+        name="Phí đăng ký biển số"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a3570e89-3c0e-449f-a00e-67d845855a8a"
+            isDerived="false"
+            sourceEndRoleName="Phí đăng ký biển số"
+            targetEndRoleName="Tổng chi phí"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="35a2bb95-e642-4e9b-a29b-0c600961edbf"
+              LastKnownName="Tổng chi phí"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e1691833-5d3d-48e4-918b-c0142838f031"
+                  name="Phí đăng ký biển số"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="59d2ef86-a4ed-4ba4-a2ef-afe0395cd14d"
+                  name="Tổng chi phí"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a06a898d-0fef-4b82-8556-d6c8310ab7a2"
+        name="Phí đăng kiểm"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ec594bae-121f-4605-8183-c3a592b7842c"
+            isDerived="false"
+            sourceEndRoleName="Phí đăng kiểm"
+            targetEndRoleName="Tổng chi phí"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="35a2bb95-e642-4e9b-a29b-0c600961edbf"
+              LastKnownName="Tổng chi phí"
+              LastKnownLocation="ManageCar.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3c27b54b-2e5e-4f4a-8516-06a18d0ff483"
+                  name="Phí đăng kiểm"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="102f586e-847d-475c-a957-12f6d6bca9fa"
+                  name="Tổng chi phí"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="35a2bb95-e642-4e9b-a29b-0c600961edbf"
+        name="Tổng chi phí"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="695f61c9-6938-4dab-a5d3-c33199d09f1b"
+        name="Tỷ lệ top xe theo đánh giá"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4bafaf4d-90e0-4248-a7e9-1fc0d1c1a295"
+        name="Tìm kiếm xe"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="db721d3c-37a1-4d12-b961-4aa9a09da477">
+            <useCaseMoniker
+              Id="3ad4a623-4ecb-40a5-a52c-f7030eb8f6b7"
+              LastKnownName="Xem thông tin xe"
+              LastKnownLocation="ManageCar.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
