@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Comment">
+  <activityRootModelMoniker Id="3a570a1e-4bd0-4454-9edc-766ce987344d" />
+  <nestedChildShapes>
+    <initialNodeShape Id="37b739a3-980a-4a61-b264-ae19ea7db180" absoluteBounds="3.25, 0.75, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="c488d81e-7a78-49b8-9c29-f4255cc637b8" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <actionShape Id="710501e3-b65d-4cca-84b6-bf61c40579ef" absoluteBounds="4.5, 0.625, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="e9781d61-69dc-4dcf-a24c-05b37fe4ecb4" LastKnownName="Access website" />
+    </actionShape>
+    <actionShape Id="c1ded242-0c70-45e2-b89e-2a9213d50505" absoluteBounds="4.5, 1.5, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="ab878058-741b-4251-aaeb-da0b979cfcc5" LastKnownName="Access user" />
+    </actionShape>
+    <actionShape Id="b47c5bb6-1ce3-44a9-bf7b-09bca0fe0c23" absoluteBounds="4.5, 2.375, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="18ca4f87-cb5b-42f6-889e-a2f9d3dcc7f5" LastKnownName="Choose car need comment" />
+    </actionShape>
+    <actionShape Id="e2385ed0-f536-49ea-a03f-8dabca00a328" absoluteBounds="4.5, 3.25, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="b51d5315-bb7f-4b23-ab94-90c864176642" LastKnownName="Comment to car" />
+    </actionShape>
+    <activityFinalNodeShape Id="91b9d32e-c15c-4972-857c-1cba1abd0507" absoluteBounds="5, 4.125, 0.125, 0.125" customColor="89, 89, 89">
+      <activityFinalNodeMoniker Id="d85095cb-bf8f-428f-a6da-dc150ae9aa69" LastKnownName="ActivityFinal1" />
+    </activityFinalNodeShape>
+    <controlFlowConnector edgePoints="[(3.375 : 0.8125); (4.5 : 0.8125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="bc61ca25-35e2-48e5-a0fd-f6da60ce6b95" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="37b739a3-980a-4a61-b264-ae19ea7db180" />
+        <actionShapeMoniker Id="710501e3-b65d-4cca-84b6-bf61c40579ef" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(5.0625 : 1); (5.0625 : 1.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="539e1d86-58ff-4ef6-910f-b18897567a41" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="710501e3-b65d-4cca-84b6-bf61c40579ef" />
+        <actionShapeMoniker Id="c1ded242-0c70-45e2-b89e-2a9213d50505" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(5.0625 : 1.875); (5.0625 : 2.375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="04205a9d-b9a4-4fa8-9ee9-ca19f75f5144" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="c1ded242-0c70-45e2-b89e-2a9213d50505" />
+        <actionShapeMoniker Id="b47c5bb6-1ce3-44a9-bf7b-09bca0fe0c23" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(5.0625 : 2.75); (5.0625 : 3.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="eb21b52f-40bb-4513-839f-9be23435f705" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="b47c5bb6-1ce3-44a9-bf7b-09bca0fe0c23" />
+        <actionShapeMoniker Id="e2385ed0-f536-49ea-a03f-8dabca00a328" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(5.0625 : 3.625); (5.0625 : 4.125)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="5592c434-019f-441e-8ae1-6f26a4255910" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="e2385ed0-f536-49ea-a03f-8dabca00a328" />
+        <activityFinalNodeShapeMoniker Id="91b9d32e-c15c-4972-857c-1cba1abd0507" />
+      </nodes>
+    </controlFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

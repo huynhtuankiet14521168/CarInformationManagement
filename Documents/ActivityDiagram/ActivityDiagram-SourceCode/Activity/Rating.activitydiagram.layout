@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Rating">
+  <activityRootModelMoniker Id="3de093df-241d-47a3-bd21-4e621e5cff24" />
+  <nestedChildShapes>
+    <initialNodeShape Id="db4b7be7-3060-447c-9a9d-df1a702bb55d" absoluteBounds="2.5, 1.125, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="4be84a79-b344-435e-9fb5-1c7cc19af7c7" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <actionShape Id="a31d30de-5c42-42c7-b9cd-458b7564da8c" absoluteBounds="3.625, 1, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="86ac3ea1-b883-4e27-a3be-8500a621f5b9" LastKnownName="Access Website" />
+    </actionShape>
+    <actionShape Id="dfc5b27a-29e3-45f8-af62-5c0afc15bcde" absoluteBounds="3.625, 1.875, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="658a53a4-2ac1-417d-9ea8-2650dcd1ce88" LastKnownName="User access" />
+    </actionShape>
+    <actionShape Id="b8b4ef9b-e8d7-447d-b46e-a59eead2772a" absoluteBounds="3.625, 2.75, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="7acfb899-abcf-447a-8169-f5f5b3559ff1" LastKnownName="Choose rate car" />
+    </actionShape>
+    <actionShape Id="4773f366-3405-4c10-b5ea-81de642fdbab" absoluteBounds="3.625, 3.5, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="70348884-d07d-467a-9aa5-1bc7a1dc8c84" LastKnownName="Rate car" />
+    </actionShape>
+    <activityFinalNodeShape Id="bd42bea6-0cfa-492b-82e7-9e9c571c2eaf" absoluteBounds="4.125, 4.25, 0.125, 0.125" customColor="89, 89, 89">
+      <activityFinalNodeMoniker Id="4b0273a6-eef9-46b4-9ee9-3b4bb88de32e" LastKnownName="ActivityFinal1" />
+    </activityFinalNodeShape>
+    <controlFlowConnector edgePoints="[(2.625 : 1.1875); (3.625 : 1.1875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="79ef49ff-1042-4941-bef7-77e551ca5fbd" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="db4b7be7-3060-447c-9a9d-df1a702bb55d" />
+        <actionShapeMoniker Id="a31d30de-5c42-42c7-b9cd-458b7564da8c" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(4.1875 : 1.375); (4.1875 : 1.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="9402a59f-a84d-4772-91a6-7791ca9680b9" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="a31d30de-5c42-42c7-b9cd-458b7564da8c" />
+        <actionShapeMoniker Id="dfc5b27a-29e3-45f8-af62-5c0afc15bcde" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(4.1875 : 2.25); (4.1875 : 2.75)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="7c34fae0-ed9c-4e8f-83f1-abce3d8c7649" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="dfc5b27a-29e3-45f8-af62-5c0afc15bcde" />
+        <actionShapeMoniker Id="b8b4ef9b-e8d7-447d-b46e-a59eead2772a" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(4.1875 : 3.125); (4.1875 : 3.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="6d91b6a2-aa3a-420f-bdad-f10800ce7f5b" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="b8b4ef9b-e8d7-447d-b46e-a59eead2772a" />
+        <actionShapeMoniker Id="4773f366-3405-4c10-b5ea-81de642fdbab" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(4.1875 : 3.875); (4.1875 : 4.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="9e997380-c35d-4f0e-a032-9275b3c22561" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="4773f366-3405-4c10-b5ea-81de642fdbab" />
+        <activityFinalNodeShapeMoniker Id="bd42bea6-0cfa-492b-82e7-9e9c571c2eaf" />
+      </nodes>
+    </controlFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

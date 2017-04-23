@@ -1,0 +1,2264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="5168de5e-f401-487f-a3a7-7c09a1f5a506"
+  name="Activity" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="33bd27c3-a95a-44de-b87e-881a2e5a269d"
+        name="Activity1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="8172c98c-aa5d-4a58-b685-818ed4a5af96"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c2db6bea-b3c7-4dd7-9f6f-a6a042170a7b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="dbd4db73-133a-479f-bc15-70fe3c28c01d"
+                  LastKnownName="Access website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode
+            Id="7c81860a-19bb-4f42-9585-fcbc7e0f8b80"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="dbd4db73-133a-479f-bc15-70fe3c28c01d"
+            name="Access website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d22813c5-b6a1-4d57-8452-077c1bbe7d59"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f53acae7-ef95-4988-837c-bacf05cce8da"
+                  LastKnownName="Choose method search"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f53acae7-ef95-4988-837c-bacf05cce8da"
+            name="Choose method search"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8003d47a-135e-474f-85a9-08c2651aea1b"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="5a855db7-54c0-47be-b776-bd2abaae03de"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="5a855db7-54c0-47be-b776-bd2abaae03de"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0ac44b28-2d1c-44e8-b5d8-c6901fdd0dce"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d5edfea8-4c2f-4533-aabb-dbaa715fac90"
+                  LastKnownName="Search to name"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b2c02940-dcf3-453a-9cc4-d38820990e11"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="62f25592-06f2-4ede-8463-a123b879f87e"
+                  LastKnownName="Search to price"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b34ba882-03d7-49d1-9270-fc1a49cd8896"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d72d8270-6a67-437e-aac1-eb97d2a4e355"
+                  LastKnownName="Search to manufacturer"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="d5edfea8-4c2f-4533-aabb-dbaa715fac90"
+            name="Search to name"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4339093f-cc16-4819-9166-051132c825a5"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="657615d8-4930-4f78-b5f5-e23f8af8ebc6"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d72d8270-6a67-437e-aac1-eb97d2a4e355"
+            name="Search to manufacturer"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="25bee50e-75b9-40c2-833d-c4e42b5a101e"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="657615d8-4930-4f78-b5f5-e23f8af8ebc6"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="62f25592-06f2-4ede-8463-a123b879f87e"
+            name="Search to price"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8759b21e-ab51-45ad-8822-7e44d92d4bd0"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="657615d8-4930-4f78-b5f5-e23f8af8ebc6"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="657615d8-4930-4f78-b5f5-e23f8af8ebc6"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d6883e95-7cf6-4959-8174-2be7414dd78f"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="5a6f2ccd-632f-40b7-9443-2e295a07d5e1"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction
+            Id="cb4c2a4e-50f7-4a05-826e-3022f24b7973"
+            name="Show list of car"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a6cf1d36-4e51-4152-b162-e72eaffabff5"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="7c81860a-19bb-4f42-9585-fcbc7e0f8b80"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="d7ba2976-03f1-479d-a3c3-7556a758b1d9"
+            name="ActivityFinal2"
+            isLeaf="false" />
+          <decisionNode
+            Id="5a6f2ccd-632f-40b7-9443-2e295a07d5e1"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="11ca040e-35b1-4acb-974d-204b62db19f9"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="d7ba2976-03f1-479d-a3c3-7556a758b1d9"
+                  LastKnownName="ActivityFinal2"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="9869342d-6518-405c-8b70-fd8494dbebbe"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="cb4c2a4e-50f7-4a05-826e-3022f24b7973"
+                  LastKnownName="Show list of car"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <objectNode
+            Id="b254167e-d6af-4bab-bdf4-cf2b7d9fc466"
+            name="Have result"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="c8fa0b73-d030-4dd5-9731-2a75dd291e9c"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="a05f1bf6-a02d-4b57-8a9c-a331fd3f3bca"
+            name="Haven't result"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="6f88e82e-f4fb-4cd1-a40f-f655d01b17f7"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="37cc60f5-8583-4734-8f69-27f2a3c14f99"
+        name="Truy cập người dùng"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="947bc0a3-8e22-48a4-8634-257458de5019"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6aeb3898-b037-4fde-b50f-94f51a2c9107"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9f4889d3-9b65-458c-99e2-2bb21809ad6b"
+                  LastKnownName="Acess website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="9f4889d3-9b65-458c-99e2-2bb21809ad6b"
+            name="Acess website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e1554f16-79a3-44cc-8d79-c7d318d20b4c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6732fa8d-34f6-4565-b7a1-6546a49ff75a"
+                  LastKnownName="Access User"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="82643f54-ddbb-4a3d-9ab8-172d2b0db481"
+            name="Search car"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a98138bd-9932-4d17-ab9b-2b2beb6c0c4d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a365c9ba-b802-4b78-8056-44a843e12bab"
+                  LastKnownName="Show list car for search"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="35ebf5d4-6023-46f5-b805-ab4cd638b991"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d212cda3-853e-42e5-b64f-0e51b17964d3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="82643f54-ddbb-4a3d-9ab8-172d2b0db481"
+                  LastKnownName="Search car"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="89f44dfe-8d3b-4818-87f4-471e89ecd0d8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="74999571-72fc-4eb4-9f97-882a4127cb6d"
+                  LastKnownName="View list of all car"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="74999571-72fc-4eb4-9f97-882a4127cb6d"
+            name="View list of all car"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a19d00c7-df20-4a26-8001-0424584e9dd4"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="6bda513f-abd7-4763-858c-31bf59fac836"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a365c9ba-b802-4b78-8056-44a843e12bab"
+            name="Show list car for search"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="75edcfa9-137e-4029-97f4-47125b689bc0"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="6bda513f-abd7-4763-858c-31bf59fac836"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="6bda513f-abd7-4763-858c-31bf59fac836"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="628a459e-4514-4891-9b85-2a3f4fe6f522"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="d9d936b0-36da-4893-9fd7-3e7f36a5d856"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <activityFinalNode
+            Id="d9d936b0-36da-4893-9fd7-3e7f36a5d856"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="6732fa8d-34f6-4565-b7a1-6546a49ff75a"
+            name="Access User"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4e251644-71d6-464e-a512-0dc85c79dbb1"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="35ebf5d4-6023-46f5-b805-ab4cd638b991"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="fa23f5f4-4f7f-482d-bcb8-a63fa94fa94d"
+        name="So sanh xe"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="81676b58-e05b-4e20-84e2-cd85ca47a4dd"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f8593fc4-ed20-421d-b719-6744572ec41b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e3f5bf11-77d9-471a-95e1-09d05a6c0265"
+                  LastKnownName="Access Website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="e3f5bf11-77d9-471a-95e1-09d05a6c0265"
+            name="Access Website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b88bbd9b-c63b-455b-b308-9dbcd24b9f90"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2ecdc56d-60b1-4ded-ba62-40ca28deb707"
+                  LastKnownName="Choose car need compare"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2ecdc56d-60b1-4ded-ba62-40ca28deb707"
+            name="Choose car need compare"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="253cc2d3-86bb-4a2f-8bee-31a1932f2103"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="be216344-36b8-47a0-a960-16412c1965ee"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d56f7294-0bbc-49a4-9418-4c964822b6e2"
+            name="Choose the first car"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7239247f-f09f-42d6-a9e7-5b56f982d83a"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="32a5ec07-bd2e-4270-9dd4-e150944fde21"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d8b4f83c-2d91-47df-9851-7f573f1aa072"
+            name="Choose the second car"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="27f0e1d5-7853-4175-9627-3babfd0868f4"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="32a5ec07-bd2e-4270-9dd4-e150944fde21"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="be216344-36b8-47a0-a960-16412c1965ee"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3a04661d-c897-4817-be8f-960b2a40ac40"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d56f7294-0bbc-49a4-9418-4c964822b6e2"
+                  LastKnownName="Choose the first car"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="f30adbab-1fa5-4e32-8d58-bb76f49756b7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d8b4f83c-2d91-47df-9851-7f573f1aa072"
+                  LastKnownName="Choose the second car"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="ca20d33b-b32d-42f7-8392-064cc815775d"
+            name="Show information of two car"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ce20b6d7-dc68-4299-b35b-468e9a11a4a8"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="123101dc-ac39-44ff-ba2b-8303918de5e1"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="32a5ec07-bd2e-4270-9dd4-e150944fde21"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1fa07236-7d6a-4e6a-9d2a-77314937b40f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ca20d33b-b32d-42f7-8392-064cc815775d"
+                  LastKnownName="Show information of two car"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <activityFinalNode
+            Id="123101dc-ac39-44ff-ba2b-8303918de5e1"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="7d626e3c-2758-4d21-925e-4bace082960b"
+        name="Dang nhap"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="0235e6ca-4479-4e90-8189-dbcaa46bcb3b"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5ac1f984-10f0-4661-a084-b3c3593592de"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="28df2480-53ed-4861-8f4e-0d5056f292c1"
+                  LastKnownName="Truy cập website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="28df2480-53ed-4861-8f4e-0d5056f292c1"
+            name="Truy cập website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a1e25490-a1ec-46a3-b743-e484ccea85fc"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5b0eecad-0069-4e93-a883-08606a7cd018"
+                  LastKnownName="Đăng nhập"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5b0eecad-0069-4e93-a883-08606a7cd018"
+            name="Đăng nhập"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="40aa45c9-ef1b-404c-858c-d48e91030b41"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="813214f2-5836-4817-9496-f3d04dd528d6"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="06c64f5c-657f-41c1-91a1-68100fc0bfad"
+            name="Quản lí"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="119d25bd-54e9-449b-89c8-8f30d3803b26"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="0fd2e1db-2505-42ad-8138-d6b8caa56316"
+                  LastKnownName="Fork2"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="fea4de33-cd80-4099-979c-bbbcbfeaf27c"
+            name="Nhân viên"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8815ec6d-cc61-447d-87ba-5b2231cdc14c"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="a093ae9f-e8e1-4b1e-a130-7a07758b38b1"
+                  LastKnownName="Fork4"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="813214f2-5836-4817-9496-f3d04dd528d6"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9cb3df35-bb69-493e-a473-313d2f57cf49"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="06c64f5c-657f-41c1-91a1-68100fc0bfad"
+                  LastKnownName="Quản lí"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8bc9b61f-ded5-4373-98e4-1c615e5ebfab"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fea4de33-cd80-4099-979c-bbbcbfeaf27c"
+                  LastKnownName="Nhân viên"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="bae76130-4f35-493e-a06f-21424eea561c"
+            name="Quản lí nhân viên"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="001f5100-4a6c-4177-bfe0-2dd1e28537aa"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="9c86d613-e449-4c88-a061-cd4d950a5f43"
+                  LastKnownName="Fork3"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="0fd2e1db-2505-42ad-8138-d6b8caa56316"
+            name="Fork2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="60e56858-1fe2-4d0d-83ef-535fe5b2cf86"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2231e8e7-83ce-42f9-9559-4440b93fb666"
+                  LastKnownName="Kiểm duyệt thông tin"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="69b12c9a-9c7a-4f85-9ff6-d5853c7f4a75"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bae76130-4f35-493e-a06f-21424eea561c"
+                  LastKnownName="Quản lí nhân viên"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="2231e8e7-83ce-42f9-9559-4440b93fb666"
+            name="Kiểm duyệt thông tin"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="224f60fa-de88-4544-98ab-332575c09db4"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="cad1ccc2-4a92-4ec1-b3b2-2cfcde227834"
+                  LastKnownName="Đăng tải lên website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="41660ebd-3347-4757-95e2-457acdc09874"
+            name="Thêm xóa tài khoản nhân viên"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a01e4b62-44bb-4a90-841c-98238062020e"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="b8f955e6-9a23-4fa8-93c5-df23dce5e4ec"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="cad1ccc2-4a92-4ec1-b3b2-2cfcde227834"
+            name="Đăng tải lên website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d27a5ecf-8058-4449-acef-e741dbd2f6e1"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="87b23b23-6a8e-4a39-8477-dfa394174df5"
+                  LastKnownName="ActivityFinal2"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="87b23b23-6a8e-4a39-8477-dfa394174df5"
+            name="ActivityFinal2"
+            isLeaf="false" />
+          <forkNode
+            Id="9c86d613-e449-4c88-a061-cd4d950a5f43"
+            name="Fork3"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ce409370-2412-406d-ba51-cfccefb66884"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="41660ebd-3347-4757-95e2-457acdc09874"
+                  LastKnownName="Thêm xóa tài khoản nhân viên"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="cdf7d7a6-f3cf-476b-b901-b36fcad724c0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="55d67224-9f79-430b-9728-ea59ac37a152"
+                  LastKnownName="Xem thông tin nhân viên"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="55d67224-9f79-430b-9728-ea59ac37a152"
+            name="Xem thông tin nhân viên"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="72022cc5-e066-490a-bdf3-48bf54832a99"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="b8f955e6-9a23-4fa8-93c5-df23dce5e4ec"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="b8f955e6-9a23-4fa8-93c5-df23dce5e4ec"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="817b4ea8-a29d-4dcf-83dd-03e619690d12"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="da1470e5-b5f9-4dd4-a55b-2a8c56656ad3"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <activityFinalNode
+            Id="da1470e5-b5f9-4dd4-a55b-2a8c56656ad3"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <forkNode
+            Id="a093ae9f-e8e1-4b1e-a130-7a07758b38b1"
+            name="Fork4"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0504c4d0-495e-4329-84bf-bb2519a562c5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="66e35381-fbc0-4af0-8606-48fd9756edb5"
+                  LastKnownName="Tổng hợp thông tin xe"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="867ec9a2-842d-40a0-adc3-403463d9eb3d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="000d5c47-8b29-4153-b7d2-a23b1c042fb5"
+                  LastKnownName="Tổng hợp top xe bán chạy của năm theo vùng"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="66e35381-fbc0-4af0-8606-48fd9756edb5"
+            name="Tổng hợp thông tin xe"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="751ba0c9-da32-4046-90c5-0c71cdefaacf"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2231e8e7-83ce-42f9-9559-4440b93fb666"
+                  LastKnownName="Kiểm duyệt thông tin"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="000d5c47-8b29-4153-b7d2-a23b1c042fb5"
+            name="Tổng hợp top xe bán chạy của năm theo vùng"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e25f7d8b-1450-48a1-9e14-d44e31734fd8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2231e8e7-83ce-42f9-9559-4440b93fb666"
+                  LastKnownName="Kiểm duyệt thông tin"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="8b0d3c8d-3187-40b8-9e96-1546adaa5104"
+        name="QuanLy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="765534cf-7449-4847-8c79-8cb2d84f980c"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9af79a19-6c2f-4696-9779-fb2d3cac56d2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4af74223-d861-4b44-8cba-023e41f45340"
+                  LastKnownName="Truy cập website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="4af74223-d861-4b44-8cba-023e41f45340"
+            name="Truy cập website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="05372187-6b4c-417b-9aef-a5c441bc18d2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8d5d0c9f-0bc3-4908-89d2-aea647883cf6"
+                  LastKnownName="Đăng nhập ID quản lí"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="8d5d0c9f-0bc3-4908-89d2-aea647883cf6"
+            name="Đăng nhập ID quản lí"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3b0e475c-13de-4e22-97f2-40f00e70113e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="aa1d0705-f21e-42b2-b68f-5cd385d1aac9"
+                  LastKnownName="Quản lí nhân viên"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="aa1d0705-f21e-42b2-b68f-5cd385d1aac9"
+            name="Quản lí nhân viên"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5e71d1e2-79e8-4041-addd-9573bdd6c066"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="3342dcdd-96d1-4a3d-ad00-1eae55f58cfc"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="3342dcdd-96d1-4a3d-ad00-1eae55f58cfc"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5564c953-9134-482e-9f4d-d0f2291cbfaf"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="136c1e2d-782c-48e1-923a-a0f2c685c4a2"
+                  LastKnownName="Thêm tài khoản nhân viên"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="02006ee9-03ba-4f59-8dd3-38af143e5dd6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a1f8bf82-4b6d-4912-946a-ccee0068c562"
+                  LastKnownName="Xem thông tin tài khoản"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="5f2bc9c1-92f7-4543-84e0-24cb3f92c1ab"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8619013a-1874-4f0e-b563-cf324d0d1609"
+                  LastKnownName="Xóa tài khoản nhân viên"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="136c1e2d-782c-48e1-923a-a0f2c685c4a2"
+            name="Thêm tài khoản nhân viên"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4ff14375-9a28-4e63-b3a4-8482f4941210"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="1eed0629-63fc-4606-81d8-3f8394f6f534"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="8619013a-1874-4f0e-b563-cf324d0d1609"
+            name="Xóa tài khoản nhân viên"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ba435ec8-c0c7-47c9-bae9-3f52e5255cab"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="1eed0629-63fc-4606-81d8-3f8394f6f534"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a1f8bf82-4b6d-4912-946a-ccee0068c562"
+            name="Xem thông tin tài khoản"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5210a4f6-051d-4c72-bb01-ffad7dfb30ac"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="1eed0629-63fc-4606-81d8-3f8394f6f534"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="1eed0629-63fc-4606-81d8-3f8394f6f534"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="46c0b144-96d7-47d0-8235-2c1082d96bc6"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="c25796da-c420-4a7e-8462-b2a96d5f8d6a"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <activityFinalNode
+            Id="c25796da-c420-4a7e-8462-b2a96d5f8d6a"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="44b978eb-6d62-4326-88b3-b8695b01dfbe"
+        name="QuanLiNhanVien"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="8b16de2c-0f27-4c40-a002-fa8ba8d92299"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="806b9535-4a80-4bcd-af4d-1170d4c16d98"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="05dcb131-b2b9-42da-a35c-d850add81ceb"
+                  LastKnownName="Access website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="05dcb131-b2b9-42da-a35c-d850add81ceb"
+            name="Access website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c7da1702-1635-4d7c-81dc-028750d9fb5c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ba75da55-f3f0-4f7a-a2e2-acef6e34462a"
+                  LastKnownName="Login admin ID"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ba75da55-f3f0-4f7a-a2e2-acef6e34462a"
+            name="Login admin ID"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ab1f8f98-d61d-45b5-a64b-2f9de8dd5bb7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="880cca1c-7248-4f3d-812a-fc39e5f4a9a2"
+                  LastKnownName="Manage Employee "
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="880cca1c-7248-4f3d-812a-fc39e5f4a9a2"
+            name="Manage Employee "
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="86edc457-d54e-4fb3-9ec8-cebf61264cef"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="9f5400d8-8940-4481-8362-d1136df088fc"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="9f5400d8-8940-4481-8362-d1136df088fc"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="17920102-c5ba-4885-bdb9-38d9c4f942c4"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9ed59de6-9c86-4b99-b371-af65c2b935cb"
+                  LastKnownName="Add ID employee"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="2683e0e3-2e6e-48b9-ae05-1e33ab6a12eb"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ff618f38-75f8-4202-922c-359a47195a4c"
+                  LastKnownName="Delete ID employee"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="e1fabb55-0ff3-4d66-b885-4936d2dff149"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b034475d-5d8c-4f06-93f5-bfc9b2e8f2ba"
+                  LastKnownName="View employee information"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="ff618f38-75f8-4202-922c-359a47195a4c"
+            name="Delete ID employee"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5c350a4d-1d98-4bb9-8127-74770841320c"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="dd111c3e-b44a-444c-82c7-9baf86c29b23"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="9ed59de6-9c86-4b99-b371-af65c2b935cb"
+            name="Add ID employee"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fecd4ef2-5239-4f5e-9333-601e6df59786"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="dd111c3e-b44a-444c-82c7-9baf86c29b23"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b034475d-5d8c-4f06-93f5-bfc9b2e8f2ba"
+            name="View employee information"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e6d8b90d-2994-4953-a8c6-61b820b04b47"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="dd111c3e-b44a-444c-82c7-9baf86c29b23"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="dd111c3e-b44a-444c-82c7-9baf86c29b23"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="72ff9e5e-9c7e-474f-b1b5-5391b8a99844"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="dc5ee746-cbe1-4147-b790-feefa026d469"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <activityFinalNode
+            Id="dc5ee746-cbe1-4147-b790-feefa026d469"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="d589f035-ea22-44e4-a78f-d2ccea832e3a"
+        name="Employee"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="44a128ca-75ca-44b2-bf70-05b3c8c53ea4"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9a7ca1a6-b897-49ef-9790-f96b2f60df81"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="161c03de-ab46-4f1f-acb1-6b9b3c95a991"
+                  LastKnownName="Access website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="161c03de-ab46-4f1f-acb1-6b9b3c95a991"
+            name="Access website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b5f833b5-1410-4ef9-992c-3cd6bae96cd2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6420a8a3-fbc1-442c-bea5-19610a5b2372"
+                  LastKnownName="Login  employee ID"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6420a8a3-fbc1-442c-bea5-19610a5b2372"
+            name="Login  employee ID"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6d734dc3-3aaa-482d-81c4-0aba46b92492"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="895c7739-a355-440b-9682-70a444f776c7"
+                  LastKnownName="Summarize information of car"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="895c7739-a355-440b-9682-70a444f776c7"
+            name="Summarize information of car"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1d8bdcfe-201f-4771-a2da-8a7ff7c80f4c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="995a8041-70f5-4819-9713-4b9d6c87aef8"
+                  LastKnownName="Send to admin"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="995a8041-70f5-4819-9713-4b9d6c87aef8"
+            name="Send to admin"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4e612dac-7048-4466-8d6b-a87c9ff95349"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="09357976-2524-47b5-82f0-404c3a5cd949"
+                  LastKnownName="Check information"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="09357976-2524-47b5-82f0-404c3a5cd949"
+            name="Check information"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="008dafb1-b02d-487a-a34f-883cf8926d99"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="f8fd82c4-98e1-4f0c-b891-55c0aca1ee4c"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f536ab51-8950-426c-aa7d-507b4ef31c22"
+            name="Post to website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b0458c65-a314-468b-8a3f-a88f2ff6a041"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="daab1fe6-f3ee-4753-abbd-667a2e545207"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="daab1fe6-f3ee-4753-abbd-667a2e545207"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <decisionNode
+            Id="f8fd82c4-98e1-4f0c-b891-55c0aca1ee4c"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5864bd34-fb59-49e2-bd1a-358d6fe7b91c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f536ab51-8950-426c-aa7d-507b4ef31c22"
+                  LastKnownName="Post to website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b5917b0d-f7ca-4e05-b61a-d4f83cc225c7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5e052c1a-ecf4-4f1d-938c-65df9ce685c7"
+                  LastKnownName="Fix information"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <objectNode
+            Id="565235dd-5264-4c30-8070-9a8cc8398acc"
+            name="True"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="2b4b4ccd-075d-432f-be34-6266b75d9602"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="5e052c1a-ecf4-4f1d-938c-65df9ce685c7"
+            name="Fix information"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="23d9bd13-906a-4b4e-8d08-eb95f1582a46"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="995a8041-70f5-4819-9713-4b9d6c87aef8"
+                  LastKnownName="Send to admin"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode
+            Id="9053a1d3-81ae-4b72-91be-6f723ef52084"
+            name="False"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="4e60faa7-473b-48a4-8f1d-e685e76bc667"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="924046af-c083-423d-91d8-da8522502d93"
+        name="CheckInformation"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="d83b2e4c-5c1e-4d32-a695-09e2d6cbbb82"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ce9f8a0e-1323-4319-8b47-4d1ae1aa54a5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d57f4382-b145-4ccc-8bd6-749355521f47"
+                  LastKnownName="Access website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="d57f4382-b145-4ccc-8bd6-749355521f47"
+            name="Access website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="32383fa1-d1ba-4f2e-85c9-627c426b489e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d0a9a475-21b2-46db-bb23-11e4893892f8"
+                  LastKnownName="Login admin ID"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d0a9a475-21b2-46db-bb23-11e4893892f8"
+            name="Login admin ID"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ff4f50d9-68af-48d5-a65d-8f6c22c44b3d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="60d51284-31bc-42c7-b42f-fa5a8071ec64"
+                  LastKnownName="Check information"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="60d51284-31bc-42c7-b42f-fa5a8071ec64"
+            name="Check information"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b958c2e0-a3f6-40bf-95c8-30a8787fc383"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="2ca02f64-bf0e-4abc-b638-b897a7c1666b"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c0f942d8-034b-44ea-bbc2-d8b6218f11f1"
+            name="Post to website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="73217628-8733-434e-8a59-c8fe98b4eee9"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="3aab9729-0c43-4615-a31e-9fc6fc715c03"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="3aab9729-0c43-4615-a31e-9fc6fc715c03"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <decisionNode
+            Id="2ca02f64-bf0e-4abc-b638-b897a7c1666b"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="70bea7f5-632a-4b64-b1e8-473728b7303e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c0f942d8-034b-44ea-bbc2-d8b6218f11f1"
+                  LastKnownName="Post to website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="d5d98a08-7a18-4f0f-b571-33ba0ee39e67"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4f7a798e-cb13-422d-ad3a-4eeae0d1930b"
+                  LastKnownName="Send to employee"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="4f7a798e-cb13-422d-ad3a-4eeae0d1930b"
+            name="Send to employee"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5526eb28-9c0f-457d-b4e4-78bf6408d5a6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4811c39a-a1b4-495d-802f-0c87aa71d5bd"
+                  LastKnownName="Fix information"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode
+            Id="299cd1c1-8809-4990-a5bd-2b07a5a2891b"
+            name="True"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="e203127c-693e-4efc-86bd-6daa41d3ad27"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="940f7f51-ba2d-4175-90e6-e3b0cb3699bc"
+            name="False"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="ffdae9b9-ac17-4c0e-b5ba-0c255575b90d"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="4811c39a-a1b4-495d-802f-0c87aa71d5bd"
+            name="Fix information"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e55a42aa-1434-4657-9eea-b0fceeccdaf3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="60d51284-31bc-42c7-b42f-fa5a8071ec64"
+                  LastKnownName="Check information"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="9eeb286c-a1f3-44f3-9069-980f17834463"
+        name="TopCar"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="c3237213-dc53-4b4d-86dc-c3f0521a6a39"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6b45d6ac-a85b-4e84-9cef-3dc9384cd859"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="de0cebf2-2d08-4661-9b65-66138dba9c2e"
+                  LastKnownName="Access website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="de0cebf2-2d08-4661-9b65-66138dba9c2e"
+            name="Access website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="23a6852f-4863-4389-b1d1-2ef8a14f0b54"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7be209bc-ec8e-4dfd-9885-c4786b8bfda8"
+                  LastKnownName="Login employee ID"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7be209bc-ec8e-4dfd-9885-c4786b8bfda8"
+            name="Login employee ID"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dec2b6c8-de11-454f-ad1b-3d2069b364c0"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="aff41ef3-621e-4bf7-9a30-334b19ab0093"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="fa20af6c-8678-477e-a68e-45a42785a4b8"
+            name="Summarize car top selling in month"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="547d1adb-ea26-4b9e-9e0e-c7628dc06a74"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="df868970-033b-403b-bdb5-7b5adbd761ff"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="aff41ef3-621e-4bf7-9a30-334b19ab0093"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6a375388-c5c7-4a50-8748-a1eda3165f3e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fa20af6c-8678-477e-a68e-45a42785a4b8"
+                  LastKnownName="Summarize car top selling in month"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="f4cda0e7-5749-4129-acb7-f7fca76f8eb3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9700a9d3-ab11-4f2d-9171-c09441d490ce"
+                  LastKnownName="Summarize car top selling in year"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="ae8c1801-eb88-4777-a978-c878f6b4ad9c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6e4f06c9-b4d9-4210-be9d-a00a462d61a3"
+                  LastKnownName="Summarize car top rate"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="9700a9d3-ab11-4f2d-9171-c09441d490ce"
+            name="Summarize car top selling in year"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d7e632d3-1fec-4bdc-889e-a9cb3990453a"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="df868970-033b-403b-bdb5-7b5adbd761ff"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6e4f06c9-b4d9-4210-be9d-a00a462d61a3"
+            name="Summarize car top rate"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ff981abc-36d9-45be-9248-ecab9fb9bed0"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="df868970-033b-403b-bdb5-7b5adbd761ff"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="df868970-033b-403b-bdb5-7b5adbd761ff"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="770e81dd-5916-4ffe-94c0-852210806c9b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="68441449-d83b-48af-a423-80b1817bef7e"
+                  LastKnownName="Check information"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction
+            Id="68441449-d83b-48af-a423-80b1817bef7e"
+            name="Check information"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e524bf63-3801-476e-8198-64c25f72fbec"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="69928daf-637a-4aa9-81f0-b0c4f1ecd6e0"
+                  LastKnownName="Post to website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="69928daf-637a-4aa9-81f0-b0c4f1ecd6e0"
+            name="Post to website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c1f163b0-980a-4165-9a03-b0270669eb74"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="32097dc2-0046-4f09-994b-678fc6e8dde0"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="32097dc2-0046-4f09-994b-678fc6e8dde0"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="c7115332-6bf5-4661-8220-432a93e35f86"
+        name="Comment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="0177a02b-40c1-43d0-87cb-692eda6c0155"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dad28518-9bbf-49bc-beb0-585f89fbf8fd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="becefa40-1c90-4c2d-8435-83353faab828"
+                  LastKnownName="Access website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="becefa40-1c90-4c2d-8435-83353faab828"
+            name="Access website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0d917c1f-ed4f-47ba-a4aa-0b9e8a078019"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f3da36f0-4158-4912-ba5e-ead6bff61254"
+                  LastKnownName="Access user"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f3da36f0-4158-4912-ba5e-ead6bff61254"
+            name="Access user"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="416d0027-ceca-4f7c-946a-315845d8c65e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5fdf258a-3621-4ff6-9fd1-e72246cd96d2"
+                  LastKnownName="Choose car need comment"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5fdf258a-3621-4ff6-9fd1-e72246cd96d2"
+            name="Choose car need comment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="41b4b613-a1de-43a2-acde-d66c300790a3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a8fca175-5a88-4d30-9554-d97b69dc6cd2"
+                  LastKnownName="Comment to car"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a8fca175-5a88-4d30-9554-d97b69dc6cd2"
+            name="Comment to car"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="09ff19d5-7581-48fc-aeb9-186d33e35e56"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="a00cef47-90b7-409f-8554-fa60b3141720"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="a00cef47-90b7-409f-8554-fa60b3141720"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="467cf679-5fea-4708-9b41-7b11c714599f"
+        name="Replycomment"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="c694a55b-4254-44e1-a038-a59c0347552b"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="83c1fb8e-ff84-4bac-956a-e31ea7c2b63f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7ee0ab7c-dcc6-4592-8fac-f396d84de287"
+                  LastKnownName="Access website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="7ee0ab7c-dcc6-4592-8fac-f396d84de287"
+            name="Access website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="15ab9e84-ca6e-4639-9b9c-a736ce76124e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7c4113ec-2e8d-447d-9f1b-87a615236fa8"
+                  LastKnownName="Login employee ID"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7c4113ec-2e8d-447d-9f1b-87a615236fa8"
+            name="Login employee ID"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a2c2d6ca-ab83-4560-8a6f-27ee0cede0c7"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4aef9327-0779-4a56-aeba-f69709aa8f97"
+                  LastKnownName="View comment"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="4aef9327-0779-4a56-aeba-f69709aa8f97"
+            name="View comment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="98268928-ff73-4ce7-8922-1b77ffb1fcbc"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="14c5e941-4030-4dd5-b761-03aa57b96e69"
+                  LastKnownName="Choose comment need reply"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="14c5e941-4030-4dd5-b761-03aa57b96e69"
+            name="Choose comment need reply"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a82ef2fc-b95a-4a99-b760-71365b7a5b6c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6f3a2313-c5b5-4235-aa80-cc8b451656f6"
+                  LastKnownName="Reply comment"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6f3a2313-c5b5-4235-aa80-cc8b451656f6"
+            name="Reply comment"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ea014368-6177-4c79-87b9-35e1145245ba"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="64f9454a-629a-40dd-b939-8446b402eedb"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="64f9454a-629a-40dd-b939-8446b402eedb"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="8a0412ce-53da-47a4-afb8-eee0c9963121"
+        name="UpdateInformation"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="5e5d77d9-adb4-45ca-870c-3cea42d6aee9"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a88d4e06-02ab-44ff-8f93-2cb6edbf85c6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c12d18b8-36b2-4c0c-a98a-24c18ae2be88"
+                  LastKnownName="Access website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="c12d18b8-36b2-4c0c-a98a-24c18ae2be88"
+            name="Access website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="35f8aa2e-458c-4d81-b891-0038e7ec906a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1c07d2b4-2ccd-4d90-9841-d1f8e7668c4f"
+                  LastKnownName="Login employee ID"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1c07d2b4-2ccd-4d90-9841-d1f8e7668c4f"
+            name="Login employee ID"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="03a8142e-77df-4223-9052-7e95a46dbf43"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2bb4c960-9fd7-4373-957b-881006b8dbfd"
+                  LastKnownName="Choose car need update"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="2bb4c960-9fd7-4373-957b-881006b8dbfd"
+            name="Choose car need update"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d75510ab-2a23-4f8f-be9b-6538e50059f5"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="de6c476c-0f1d-4541-a865-2f884e999123"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="de6c476c-0f1d-4541-a865-2f884e999123"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="025e60aa-9c30-401a-8337-f3275930b273"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9bda1902-b1cf-457c-b2ab-e552c5d9a5f4"
+                  LastKnownName="Delete car"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="3e9026ee-4250-4a79-bfb0-1f4d7ff6bd48"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0249c287-5492-405f-89ee-494573ad0559"
+                  LastKnownName="Update car"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="9bda1902-b1cf-457c-b2ab-e552c5d9a5f4"
+            name="Delete car"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="133a27bf-4358-4f85-b6b8-f8b0b8df3242"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="2a7fc764-1f9c-4ce5-a37d-68bb3ce0d5e4"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0249c287-5492-405f-89ee-494573ad0559"
+            name="Update car"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a2f19bd0-7033-46b6-8cca-ce049c4f1edf"
+                isLeaf="false">
+                <joinNodeMoniker
+                  Id="2a7fc764-1f9c-4ce5-a37d-68bb3ce0d5e4"
+                  LastKnownName="Join1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode
+            Id="2a7fc764-1f9c-4ce5-a37d-68bb3ce0d5e4"
+            name="Join1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b8318ebf-85d2-4297-9500-f726b2e02d9b"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="499b75a6-1212-4da7-9bda-450fef58528c"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <activityFinalNode
+            Id="499b75a6-1212-4da7-9bda-450fef58528c"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="077a3e9f-7f80-47dc-b47f-07506534ab32"
+        name="Rating"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="e1c84348-c7b1-4ef1-a365-39c9b3dd99a0"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a06d026c-3fe4-4fee-ad84-8fb9447f8c28"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a11ec815-ae4a-4351-8bc3-45d9c17e4a2f"
+                  LastKnownName="Access Website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="a11ec815-ae4a-4351-8bc3-45d9c17e4a2f"
+            name="Access Website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7c994f07-cc79-498b-81af-39da38ed3740"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="eef2de85-01f9-44a9-9811-8c9dbe0467da"
+                  LastKnownName="User access"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="eef2de85-01f9-44a9-9811-8c9dbe0467da"
+            name="User access"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a7f38b9c-4759-440d-b84d-0a9057353e85"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="6b4b3d46-dab9-4660-bc18-4859ec921f12"
+                  LastKnownName="Choose rate car"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="6b4b3d46-dab9-4660-bc18-4859ec921f12"
+            name="Choose rate car"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="9c375bff-74dc-4e8a-a39d-b81af0698213"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="02118c30-d014-420e-8591-b63a989c80ec"
+                  LastKnownName="Rate car"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="02118c30-d014-420e-8591-b63a989c80ec"
+            name="Rate car"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b8d8e987-9d01-49e6-9d15-7206af15bb96"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="6dd3a43f-21de-4f4f-9648-b6e5b60450fb"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="6dd3a43f-21de-4f4f-9648-b6e5b60450fb"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="51049468-8fd2-428b-bd64-eb559b371689"
+        name="UpdateEmployee"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="6089ab0d-705a-4e79-8b89-404453f8dd83"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="87c8cb5a-0a0f-41b4-a4fb-7849f3a25e73"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="60bcb6da-c261-4cbf-8f76-dfcb668cb212"
+                  LastKnownName="Access website"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="60bcb6da-c261-4cbf-8f76-dfcb668cb212"
+            name="Access website"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="33c6591f-768d-4523-a657-30c27350f1f0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a95d5b46-eb46-42ee-82fd-513daadff5b4"
+                  LastKnownName="Choose Employee"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a95d5b46-eb46-42ee-82fd-513daadff5b4"
+            name="Choose Employee"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="036f1e6b-862c-418b-b987-d4135cd1596c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="03b7d236-c5b3-4f34-a05e-e8ce32dcbd98"
+                  LastKnownName="Update Employee to Admin"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="03b7d236-c5b3-4f34-a05e-e8ce32dcbd98"
+            name="Update Employee to Admin"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="435fbed9-50a0-4c7c-97d6-5118b66b726c"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="7b7d4c62-e7fa-4892-a5aa-687361e57950"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Activity.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="7b7d4c62-e7fa-4892-a5aa-687361e57950"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

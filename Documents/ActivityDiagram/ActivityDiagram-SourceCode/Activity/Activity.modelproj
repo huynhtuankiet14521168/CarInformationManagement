@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8f6793a9-2448-4524-821d-6dcac063f6d6}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>Activity</Name>
+    <RootNamespace>Activity</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="CheckInformation.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CheckInformation.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CheckInformation.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Comment.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Comment.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Comment.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Rating.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Rating.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Rating.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="SummarizeInformation.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SummarizeInformation.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SummarizeInformation.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="ManageEmployee.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ManageEmployee.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>ManageEmployee.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="CompareCar.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CompareCar.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CompareCar.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Replycomment.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Replycomment.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Replycomment.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="TopCar.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TopCar.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TopCar.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="UpdateEmployee.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UpdateEmployee.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UpdateEmployee.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="UpdateInformation.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UpdateInformation.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UpdateInformation.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="UserAccess.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserAccess.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UserAccess.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="SearchCar.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SearchCar.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SearchCar.activitydiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\Activity.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>
