@@ -1,0 +1,23 @@
+E:\SourceCode\CarManagementSys\CarManagementSys\bin\Debug\CarManagementSys.exe.config
+E:\SourceCode\CarManagementSys\CarManagementSys\bin\Debug\CarManagementSys.exe
+E:\SourceCode\CarManagementSys\CarManagementSys\bin\Debug\CarManagementSys.pdb
+E:\SourceCode\CarManagementSys\CarManagementSys\bin\Debug\Bunifu_UI_v1.52.dll
+E:\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.csprojResolveAssemblyReference.cache
+E:\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.Form1.resources
+E:\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.Properties.Resources.resources
+E:\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.csproj.GenerateResource.Cache
+E:\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.exe
+E:\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.pdb
+E:\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.Administrator.resources
+E:\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.CampareTo.resources
+E:\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.CarInfor.resources
+E:\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.CarInforManagement.resources
+E:\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.EmployeeManagement.resources
+E:\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.Guest.resources
+E:\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.LoginAdmin.resources
+C:\Users\LukeHuynh\Desktop\CarInformationManagement\SourceCode\CarManagementSys\CarManagementSys\bin\Debug\CarManagementSys.exe.config
+C:\Users\LukeHuynh\Desktop\CarInformationManagement\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.exe
+C:\Users\LukeHuynh\Desktop\CarInformationManagement\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.pdb
+C:\Users\LukeHuynh\Desktop\[CCP2017][Car Information Management]\SourceCode\CarManagementSys\CarManagementSys\bin\Debug\CarManagementSys.exe.config
+C:\Users\LukeHuynh\Desktop\[CCP2017][Car Information Management]\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.exe
+C:\Users\LukeHuynh\Desktop\[CCP2017][Car Information Management]\SourceCode\CarManagementSys\CarManagementSys\obj\Debug\CarManagementSys.pdb
